@@ -1,26 +1,24 @@
-// Exercício 01 - resolução
-function podeSubir(altura, vemAcompanhado)
-let podeSubir = false
+// Resolução Renato
 
-if (altura <= 2.0 && altura >= 1.20){
-    podeSubir = true
-}
-
-if (altura >= 1.20 && vemAcompanhado){
-    podeSubir = true
-}
-return podeSubir
-
-function podeSubir(altura, vemAcompanhado){
-    if ((altura <= 2.0 && altura >= 1.20) || (altura >= 1.20 && vemAcompanhado)){
-        return true
+function podeSubir(altura,vemAcompanhado){
+    if(altura >= 1.40 && altura <= 2.00){
+        return true;
     }
-    else {
-        return false
+
+    else if(altura <= 1.40 && altura >= 1.20 && vemAcompanhado){
+        return true;
     }
+
+function podeSubir2(altura,vemAcompanhado){
+    if(altura >= 1.40 && altura <= 2.00){
+        return "Acesso autorizado";
+    }
+
+    else if(altura <= 1.40 && altura >= 1.20 && vemAcompanhado){
+        return "Acesso autorizado somente com acompanhante";
+    }
+    else{
+        return "Acesso negado";
+    }
+console.log(podeSubir);
 }
-
-function podeSubir(altura, vemAcompanhado){
-    return (altura <= 2.0 && altura >= 1.20) || (altura >= 1.20 && vemAcompanhado)
-
-    }

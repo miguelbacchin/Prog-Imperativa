@@ -32,3 +32,5 @@ arrayMisto.pop();
 arrayMisto.unshift(10);
 //Remove do início
 arrayMisto.shift();
+//Junta os elementos da array
+arrayMisto.join()

@@ -31,3 +31,8 @@ let tempo = 0
             return "kabumm"
     }
 }
+
+function microondas(prato,tempoSelecionado){
+    let mensagemPrato = "Prato inexistente"
+}
+

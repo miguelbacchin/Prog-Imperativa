@@ -33,4 +33,4 @@ function microondas(prato,tempoSelecionado)
             console.log("Prato inexistente!");
       }
     }
-microondas(1,21);
+microondas(2,25);   

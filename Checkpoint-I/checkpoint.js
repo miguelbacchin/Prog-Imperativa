@@ -1,38 +1,33 @@
-function microondas(prato, tempoEscolhido); {
-let comida = prato
-let tempo = 0
-
-    switch(comida){
-            case "pipoca":
-                tempo = 10;
-            break
-            case "macarrao":
-                tempo = 8;
-            break
-            case "carne":
-                tempo = 15;
-            break
-            case "feijao": 
-                tempo = 12;
-            break
-            case "brigadeiro":
-                tempo = 8;
-            break
-            default:
-            return "prato inexistente";
+function microondas(prato, tempoSelecionado) {
+    function tempo(tempoPrato, tempoInformado) {
+        if (tempoInformado < tempoPrato) {
+            console.log("tempo insuficiente");
+        } else if (tempoInformado > (tempoPrato * 2) && tempoInformado < (tempoPrato * 3)) {
+            console.log("A comida queimou! Prato pronto, bom apetite!");
+        } else if (tempoInformado > (tempoPrato * 3)) {
+            console.log("Kabumm!!! Prato pronto, bom apetite!");
+        } else {
+            console.log("Prato pronto, bom apetite!!!");
+        }
     }
-    if (tempoEscolhido >= 0 && tempoEscolhido < tempo){
-            return tempoEscolhido = "tempo insuficiente"
-    } else if (tempoEscolhido >= (tempo*2) && tempoEscolhido < (tempo*3)){
-            return "a comida queimou"
-    } else if (tempoEscolhido >= tempo &&  tempoEscolhido < (tempo*2)){
-            return "prato pronto, bom apetite!!!"
-    }else if (tempoEscolhido >= (tmepo*3)){
-            return "kabumm"
+    switch (prato) {
+        case 1:
+            tempo(10, tempoSelecionado);
+            break;
+        case 2:
+            tempo(8, tempoSelecionado);
+            break;
+        case 3:
+            tempo(15, tempoSelecionado);
+            break;
+        case 4:
+            tempo(12, tempoSelecionado);
+            break;
+        case 5:
+            tempo(8, tempoSelecionado);
+            break;
+        default:
+            console.log("Prato inexistente!");
     }
 }
-
-function microondas(prato,tempoSelecionado){
-    let mensagemPrato = "Prato inexistente"
-}
-
+microondas(2, 25);

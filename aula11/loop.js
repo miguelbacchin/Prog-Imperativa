@@ -13,14 +13,19 @@ for (let i = 0; i <=5; i++){
 }
 
 //Exercício 02
-for (let i = 1; i <= 10; i++){
-    console.log ( i / 2 == 0 );
+for (let i = 0; i <= 10; i++){
+    if (i % 2 == 0){
+//        console.log("O número " + i + " é par");
+    } else {
+//        console.log("O número " + i + " é impar");
+    }
 }
 
-/* // Exercício 03
+// Exercício 03
 for (let i = 1; i <=10; i++){
-    console.log(i * 1);
+    console.log("A tabuada de " + i + " é: ");
+    console.log("________________________\n")
+for(let j = 1; j <=10; j++){
+    console.log (i + "X" + j + '=' + i*j);
 }
-for (let i = 1; i <=10; i++){
-    console.log(i * 2);
-} */
+}

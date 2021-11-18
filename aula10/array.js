@@ -27,3 +27,4 @@ arrayMisto.lastIndexOf()
 //Procura um booleano (retorna true se encontrou e false se não encontrou)
 arrayMisto.includes()
 
+

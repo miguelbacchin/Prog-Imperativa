@@ -22,10 +22,12 @@ for (let i = 0; i <= 10; i++){
 }
 
 // Exercício 03
+// n = quebra de linha
+// t = tabulação
 for (let i = 1; i <=10; i++){
-    console.log("A tabuada de " + i + " é: ");
-    console.log("________________________\n")
+//    console.log("A tabuada de " + i + " é: ");
+//    console.log("________________________\n")
 for(let j = 1; j <=10; j++){
-    console.log (i + "X" + j + '=' + i*j);
+//    console.log (i + "X" + j + '=' + i*j);
 }
 }

@@ -38,7 +38,7 @@ const usuario = {
 }
 
 // Exemplo Carro
-const carro = {
+/* const carro = {
     marca:'Fiat',
     modelo: 'Argo',
     potencia:102,
@@ -48,16 +48,16 @@ const carro = {
 turbinar(){
     this.potencia = this.potencia * 2;
     }
-}
+} */
 
-const pessoa = {
+/* const pessoa = {
     nome:'Miguel',
     peso:74,
     altura:172,
     imc(){
         //console.log("imc: " + (this.peso/(this.altura*this.altura));
     }
-}
+} */
 //pessoa.imc();
 
 // Função construtora
@@ -72,4 +72,16 @@ const miguel = new Pessoa("Miguel",74,1.72);
 const pedro = new Pessoa("Pedro",70,1.75 );
 const pessoas = [miguel,pedro];
 miguel.imc();
+
 //pedro.imc();
+
+// Aula Assíncrona JSON //
+
+let pessoa = {
+    nome:"miguel",
+    idade:22,
+    altura:1.72
+}
+
+let json = JSON.stringify(pessoa)
+console.log(json)

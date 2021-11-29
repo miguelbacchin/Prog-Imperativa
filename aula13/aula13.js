@@ -27,8 +27,9 @@ function Carro(valorMarca, valorModelo){
 // console.log(new Carro("Renault", "Clio"));
 
 
+
 // JSON - JavaScript Objejact Notation (JSON) //
-const usuario = {
+/* const usuario = {
     nome:'Miguel',
     email:'bacchinm@gmail.com',
     senha:'12345678',
@@ -36,7 +37,7 @@ const usuario = {
     termoDeUso:true,
     idade:22
 }
-
+ */
 // Exemplo Carro
 /* const carro = {
     marca:'Fiat',
@@ -61,7 +62,7 @@ turbinar(){
 //pessoa.imc();
 
 // Função construtora
-function Pessoa(nomeParam,pesoParam,alturaParam){
+/* function Pessoa(nomeParam,pesoParam,alturaParam){
     this.nome = nomeParam
     this.peso = pesoParam
     this.altura = alturaParam
@@ -70,18 +71,26 @@ function Pessoa(nomeParam,pesoParam,alturaParam){
 
 const miguel = new Pessoa("Miguel",74,1.72);
 const pedro = new Pessoa("Pedro",70,1.75 );
-const pessoas = [miguel,pedro];
-miguel.imc();
+const pessoas = [miguel,pedro]; */
+//miguel.imc();
 
 //pedro.imc();
 
+
 // Aula Assíncrona JSON //
 
-let pessoa = {
-    nome:"miguel",
-    idade:22,
-    altura:1.72
-}
+// JSON.parse()
+let dadosJson = '{"cidade": "São Paulo", "bairro": "Morumbi"}';
+let dadosConvertivos = JSON.parse(dadosJson);
 
-let json = JSON.stringify(pessoa)
-console.log(json)
+console.log(dadosConvertivos);
+// Será visto no console um objeto literal
+// { cidade: 'São Paulo', bairro: 'Morumbi' }
+
+// JSON.stringify()
+let objetoLiteral = { nome: 'Carla', pais: 'Brasil' };
+let dadosConvertivos = JSON.stringify(objetoLiteral);
+
+console.log(dadosConvertivos);
+// Será visto no console os dados em uma string do tipo JSON
+// '{ "nome": "Carla", "pais": "Brasil"}'

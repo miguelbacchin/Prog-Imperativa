@@ -1,6 +1,11 @@
-const fs = require('fs');
-const { dirname } = require('path/posix');
+// Externa
+let readLineSync = require('readline-sync');
+console.log(readLineSync);
 
-let dados = fs.readFileSync(__dirname + '/dados.txt', 'utf-8');
+// Wait for user's response.
+let userName = readLineSync.question('Qual o seu nome? ');
+console.log('Olá ' + userName + '!');
 
-console.log(dados)
+// Handle the secret text (e.g. password)
+let favFood = readLineSync.question('Qual a sua comida favorita? ',)
+console.log('Oh, ' + userName + ' ama ' + favFood + '!');

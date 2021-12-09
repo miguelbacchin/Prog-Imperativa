@@ -14,3 +14,4 @@ let soma3 = (a,b) => {
     console.log("Soma3: " + (a + b) );
 }
 soma3(1,1);
+}

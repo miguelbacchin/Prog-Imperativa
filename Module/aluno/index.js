@@ -66,7 +66,7 @@ let curso = {
                 break;
         
             case 2:
-                resultado = (aluno.calcularMedia()>(notaDeAprovacao+(notaDeAprovacao*0.10)))        
+                resultado = (aluno.calcularMedia() > (notaDeAprovacao + (notaDeAprovacao*0.10)))        
                 break;
         
             default:
